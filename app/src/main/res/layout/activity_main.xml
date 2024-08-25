@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/default_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:backgroundTint="#8BC34A"
+        android:gravity="center"
+        android:text="Default"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/risks_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:backgroundTint="#F44336"
+        android:gravity="center"
+        android:text="Risks"
+        tools:ignore="HardcodedText" />
+
+    <com.arjunsahlot.blindvision.TouchListenableButton
+        android:id="@+id/chat_button"
+        android:layout_width="408dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:backgroundTint="#009688"
+        android:gravity="center"
+        android:text="Chat" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/camera_button"
+            android:layout_width="596dp"
+            android:layout_height="115dp"
+            android:layout_weight="0.8"
+            android:backgroundTint="#2137B5"
+            android:gravity="center"
+            app:icon="@drawable/ic_camera"
+            app:iconTint="#000000"
+            tools:ignore="ContentDescription" />
+
+        <Button
+            android:id="@+id/refresh_button"
+            android:layout_width="424dp"
+            android:layout_height="115dp"
+            android:layout_weight="0.8"
+            android:backgroundTint="#1A9ACC"
+            android:gravity="center"
+            app:icon="@drawable/ic_refresh"
+            app:iconTint="#000000"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+</LinearLayout>
